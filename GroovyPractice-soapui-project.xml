@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="2a215ebb-4d1e-4484-b3f8-9da7b34ebc54" activeEnvironment="Default" name="GroovyPractice" resourceRoot="" soapui-version="5.3.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:testSuite id="b1e071ad-ed91-415b-9c66-004b5b6e2493" name="TestSuite 1"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="078b13ef-9cc9-40da-9722-2f6b1c0c8847" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 1" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Groovy Script" id="59700cfd-5884-4b0d-b909-e9a79b3fe389"><con:settings/><con:config><script>//Comments for Groovy script
+// loosly coupled language
+
+// Printing in console
+log.info "SoapUIPractice"
+
+//Declare a variable
+def Trainer = "Venkatesh"
+def videos = 30
+
+// using the variables
+log.info Trainer
+log.info "Number of videos present : "+videos
+log.info "Number of videos present : $videos"
+// </script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
