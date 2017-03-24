@@ -7,10 +7,83 @@ log.info "SoapUIPractice"
 
 //Declare a variable
 def Trainer = "Venkatesh"
-def videos = 30
+def videos = 35
 
 // using the variables
 log.info Trainer
 log.info "Number of videos present : "+videos
 log.info "Number of videos present : $videos"
-// </script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
+
+// Asserts
+assert videos == 35
+
+// If Looping
+if(videos == 35){
+	log.info "Success"
+}else{
+	log.info "Failure"
+}
+
+//For loop
+for(def i=0;i&lt;10;i++)
+{
+	log.info i
+}
+
+//While
+def j=1
+while (j&lt;5)
+{
+	log.info j+"Hi"
+	j++
+}
+
+//Arrays
+def abc = new String[5]
+abc[0] = "Nagesh"
+abc[1] = "Santosh"
+abc[2] = "Anusha"
+abc[3] = "shalin"
+
+for(def k = 0;k&lt; abc.size();k++){
+	log.info abc[k]
+}
+
+
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script2" id="21c3197a-22de-4757-b762-098a48cc8d48"><con:settings/><con:config><script>// String array
+def terms=["SoapUI","Training","online","IT"]
+log.info terms[2]
+
+// Exceptions
+try{
+	def x = 4/0
+   log.info "Try block"
+	
+}catch(Exception e){
+	log.info "catch block"
+}
+
+// Arraylist
+ArrayList ar = new ArrayList()
+ar.add("a")
+ar.add("b")
+log.info ar.get(0)
+
+ar.add ("c")
+log.info ar.get(1)
+log.info ar.size
+
+// Hash Table (Key,Value)
+Hashtable ht = new Hashtable()
+ht.put("Name", "SoapUI")
+log.info ht.get("Name") 
+
+// HashMap
+def names = ["Name":"Soap","Course":"IT"]
+log.info names["Name"]
+
+// List 
+def course = [1,2,3,4]
+log.info course[2]
+</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
